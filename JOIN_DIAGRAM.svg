@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1620 1180" width="1620" height="1180" font-family="Segoe UI,Helvetica,Arial">
+<defs>
+<marker id="ar-season_team" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M 0 1 L 9 5 L 0 9 z" fill="#2E5C9A"/></marker>
+<marker id="ar-player" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M 0 1 L 9 5 L 0 9 z" fill="#1F7A6B"/></marker>
+<marker id="ar-game" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M 0 1 L 9 5 L 0 9 z" fill="#8C5A2B"/></marker>
+<marker id="ar-position" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M 0 1 L 9 5 L 0 9 z" fill="#6D4C9F"/></marker>
+</defs>
+<rect width="1620" height="1180" fill="#FFFFFF"/>
+<text x="44" y="48" font-size="24" font-weight="700" fill="#1A1A1A">MLB Data 2020-2025 &#8212; how to join the tables</text>
+<text x="44" y="74" font-size="13.5" fill="#5A5A5A">108 datasets, 769,168 rows. There are no lookup tables: every dataset carries its own identifiers, so you join them directly on natural keys.</text>
+<rect x="44" y="110" width="300" height="264" rx="8" fill="#EEF3FA" stroke="#2E5C9A" stroke-width="1.8"/>
+<rect x="44" y="110" width="300" height="30" rx="8" fill="#2E5C9A"/>
+<rect x="44" y="130" width="300" height="10" fill="#2E5C9A"/>
+<text x="56" y="130.5" font-size="14" font-weight="700" fill="#FFF">The four join keys</text>
+<text x="56" y="160" font-family="Consolas,Menlo,monospace" font-size="11.5" font-weight="700" fill="#1A1A1A">Season          108 of 108</text>
+<text x="56" y="177" font-family="Consolas,Menlo,monospace" font-size="11.5" font-weight="400" fill="#5A5A5A">  every dataset, 2020-2025</text>
+<text x="56" y="194" font-family="Consolas,Menlo,monospace" font-size="11.5" font-weight="700" fill="#1A1A1A">Team            107 of 108</text>
+<text x="56" y="211" font-family="Consolas,Menlo,monospace" font-size="11.5" font-weight="400" fill="#5A5A5A">  BR code: NYY, LAD, BOS...</text>
+<text x="56" y="228" font-family="Consolas,Menlo,monospace" font-size="11.5" font-weight="700" fill="#1A1A1A">Player_ID        67 of 108</text>
+<text x="56" y="245" font-family="Consolas,Menlo,monospace" font-size="11.5" font-weight="400" fill="#5A5A5A">  stable id: judgeaa01</text>
+<text x="56" y="262" font-family="Consolas,Menlo,monospace" font-size="11.5" font-weight="700" fill="#1A1A1A">Position         24 of 108</text>
+<text x="56" y="279" font-family="Consolas,Menlo,monospace" font-size="11.5" font-weight="400" fill="#5A5A5A">  P C 1B 2B 3B SS LF CF RF</text>
+<text x="56" y="296" font-family="Consolas,Menlo,monospace" font-size="11.5" font-weight="400" fill="#5A5A5A"></text>
+<text x="56" y="313" font-family="Consolas,Menlo,monospace" font-size="11.5" font-weight="700" fill="#1A1A1A">Game_Num / Gm#    4 of 108</text>
+<text x="56" y="330" font-family="Consolas,Menlo,monospace" font-size="11.5" font-weight="400" fill="#5A5A5A">  team game number, 1..162</text>
+<text x="56" y="347" font-family="Consolas,Menlo,monospace" font-size="11.5" font-weight="700" fill="#1A1A1A">Boxscore_URL      2 of 108</text>
+<text x="56" y="364" font-family="Consolas,Menlo,monospace" font-size="11.5" font-weight="400" fill="#5A5A5A">  identifies the game itself</text>
+<rect x="400" y="110" width="360" height="150" rx="8" fill="#EEF3FA" stroke="#2E5C9A" stroke-width="1.8"/>
+<rect x="400" y="110" width="360" height="30" rx="8" fill="#2E5C9A"/>
+<rect x="400" y="130" width="360" height="10" fill="#2E5C9A"/>
+<text x="412" y="130.5" font-size="14" font-weight="700" fill="#FFF">TEAM x SEASON</text>
+<text x="748" y="130.5" font-size="11.5" fill="#DCE6F2" text-anchor="end">39 datasets</text>
+<text x="412" y="160" font-family="Consolas,Menlo,monospace" font-size="11.5" font-weight="700" fill="#1A1A1A">key:  Season + Team</text>
+<text x="412" y="177" font-family="Consolas,Menlo,monospace" font-size="11.5" font-weight="400" fill="#5A5A5A">Standings, Standings_Expanded,</text>
+<text x="412" y="194" font-family="Consolas,Menlo,monospace" font-size="11.5" font-weight="400" fill="#5A5A5A">Team_Season_Summary, Team_*</text>
+<text x="412" y="211" font-family="Consolas,Menlo,monospace" font-size="11.5" font-weight="400" fill="#5A5A5A">aggregates, Team_Miscellaneous</text>
+<rect x="400" y="330" width="360" height="168" rx="8" fill="#EAF5F2" stroke="#1F7A6B" stroke-width="1.8"/>
+<rect x="400" y="330" width="360" height="30" rx="8" fill="#1F7A6B"/>
+<rect x="400" y="350" width="360" height="10" fill="#1F7A6B"/>
+<text x="412" y="350.5" font-size="14" font-weight="700" fill="#FFF">PLAYER x TEAM x SEASON</text>
+<text x="748" y="350.5" font-size="11.5" fill="#DCE6F2" text-anchor="end">54 datasets</text>
+<text x="412" y="380" font-family="Consolas,Menlo,monospace" font-size="11.5" font-weight="700" fill="#1A1A1A">key:  Season + Team + Player_ID</text>
+<text x="412" y="397" font-family="Consolas,Menlo,monospace" font-size="11.5" font-weight="400" fill="#5A5A5A">Standard/Value/Advanced Batting,</text>
+<text x="412" y="414" font-family="Consolas,Menlo,monospace" font-size="11.5" font-weight="400" fill="#5A5A5A">Pitching, Sabermetric, Ratio,</text>
+<text x="412" y="431" font-family="Consolas,Menlo,monospace" font-size="11.5" font-weight="400" fill="#5A5A5A">Situational, Rosters, Awards,</text>
+<text x="412" y="448" font-family="Consolas,Menlo,monospace" font-size="11.5" font-weight="400" fill="#5A5A5A">Transactions, Coaching_Staff</text>
+<rect x="400" y="568" width="360" height="150" rx="8" fill="#F2EEF8" stroke="#6D4C9F" stroke-width="1.8"/>
+<rect x="400" y="568" width="360" height="30" rx="8" fill="#6D4C9F"/>
+<rect x="400" y="588" width="360" height="10" fill="#6D4C9F"/>
+<text x="412" y="588.5" font-size="14" font-weight="700" fill="#FFF">PLAYER x TEAM x SEASON x POSITION</text>
+<text x="748" y="588.5" font-size="11.5" fill="#DCE6F2" text-anchor="end">11 datasets</text>
+<text x="412" y="618" font-family="Consolas,Menlo,monospace" font-size="11.5" font-weight="700" fill="#1A1A1A">key:  + Position</text>
+<text x="412" y="635" font-family="Consolas,Menlo,monospace" font-size="11.5" font-weight="400" fill="#5A5A5A">Standard_Fielding_By_Position,</text>
+<text x="412" y="652" font-family="Consolas,Menlo,monospace" font-size="11.5" font-weight="400" fill="#5A5A5A">Advanced_Fielding_C / 1B / 2B /</text>
+<text x="412" y="669" font-family="Consolas,Menlo,monospace" font-size="11.5" font-weight="400" fill="#5A5A5A">3B / SS / LF / CF / RF / P</text>
+<rect x="950" y="330" width="360" height="168" rx="8" fill="#FBF4EC" stroke="#8C5A2B" stroke-width="1.8"/>
+<rect x="950" y="330" width="360" height="30" rx="8" fill="#8C5A2B"/>
+<rect x="950" y="350" width="360" height="10" fill="#8C5A2B"/>
+<text x="962" y="350.5" font-size="14" font-weight="700" fill="#FFF">TEAM x GAME</text>
+<text x="1298" y="350.5" font-size="11.5" fill="#DCE6F2" text-anchor="end">2 datasets</text>
+<text x="962" y="380" font-family="Consolas,Menlo,monospace" font-size="11.5" font-weight="700" fill="#1A1A1A">key:  Season + Team + Gm#</text>
+<text x="962" y="397" font-family="Consolas,Menlo,monospace" font-size="11.5" font-weight="400" fill="#5A5A5A">Schedule_Results,</text>
+<text x="962" y="414" font-family="Consolas,Menlo,monospace" font-size="11.5" font-weight="400" fill="#5A5A5A">Postseason_Schedule_Results</text>
+<text x="962" y="431" font-family="Consolas,Menlo,monospace" font-size="11.5" font-weight="400" fill="#5A5A5A"></text>
+<text x="962" y="448" font-family="Consolas,Menlo,monospace" font-size="11.5" font-weight="400" fill="#5A5A5A">Boxscore_URL names the game:</text>
+<text x="962" y="465" font-family="Consolas,Menlo,monospace" font-size="11.5" font-weight="400" fill="#5A5A5A">two rows share it, one per club</text>
+<rect x="950" y="568" width="360" height="150" rx="8" fill="#FBF4EC" stroke="#8C5A2B" stroke-width="1.8"/>
+<rect x="950" y="568" width="360" height="30" rx="8" fill="#8C5A2B"/>
+<rect x="950" y="588" width="360" height="10" fill="#8C5A2B"/>
+<text x="962" y="588.5" font-size="14" font-weight="700" fill="#FFF">PLAYER x GAME</text>
+<text x="1298" y="588.5" font-size="11.5" fill="#DCE6F2" text-anchor="end">2 datasets</text>
+<text x="962" y="618" font-family="Consolas,Menlo,monospace" font-size="11.5" font-weight="700" fill="#1A1A1A">key:  Season + Team + Game_Num</text>
+<text x="962" y="635" font-family="Consolas,Menlo,monospace" font-size="11.5" font-weight="400" fill="#5A5A5A">Batting_Orders (234,828 rows)</text>
+<text x="962" y="652" font-family="Consolas,Menlo,monospace" font-size="11.5" font-weight="400" fill="#5A5A5A">Defensive_Lineups (258,472)</text>
+<text x="962" y="669" font-family="Consolas,Menlo,monospace" font-size="11.5" font-weight="400" fill="#5A5A5A">+ Player_ID, + Position</text>
+<path d="M 580 330 L 580 262" fill="none" stroke="#2E5C9A" stroke-width="2" opacity="0.9" marker-end="url(#ar-season_team)"/>
+<text x="580" y="290" font-family="Consolas,Menlo,monospace" font-size="11" fill="#2E5C9A" text-anchor="middle">Season + Team</text>
+<path d="M 580 568 L 580 500" fill="none" stroke="#1F7A6B" stroke-width="2" opacity="0.9" marker-end="url(#ar-player)"/>
+<text x="580" y="528" font-family="Consolas,Menlo,monospace" font-size="11" fill="#1F7A6B" text-anchor="middle">Season + Team + Player_ID</text>
+<path d="M 950 378 C 856 378, 856 200, 762 200" fill="none" stroke="#2E5C9A" stroke-width="2" opacity="0.9" marker-end="url(#ar-season_team)"/>
+<text x="856" y="280" font-family="Consolas,Menlo,monospace" font-size="11" fill="#2E5C9A" text-anchor="middle">Season + Team</text>
+<path d="M 1130 568 L 1130 500" fill="none" stroke="#8C5A2B" stroke-width="2" opacity="0.9" marker-end="url(#ar-game)"/>
+<text x="1130" y="524" font-family="Consolas,Menlo,monospace" font-size="11" fill="#8C5A2B" text-anchor="middle">Season + Team + Gm# = Game_Num</text>
+<path d="M 950 640 C 856 640, 856 440, 762 440" fill="none" stroke="#1F7A6B" stroke-width="2" opacity="0.9" marker-end="url(#ar-player)"/>
+<text x="856" y="531" font-family="Consolas,Menlo,monospace" font-size="11" fill="#1F7A6B" text-anchor="middle">Season + Team + Player_ID</text>
+<rect x="44" y="770" width="700" height="252" rx="8" fill="#F7F9FC" stroke="#2E5C9A" stroke-width="1.4"/>
+<text x="60" y="796" font-size="14" font-weight="700" fill="#1A1A1A">Worked example &#8212; a player season line with team context</text>
+<text x="60" y="822" font-family="Consolas,Menlo,monospace" font-size="11.5" fill="#1A1A1A">SELECT b.Player, b.Season, b.Team, t.W, t.L, b.HR, a.HR_Pct</text>
+<text x="60" y="838" font-family="Consolas,Menlo,monospace" font-size="11.5" fill="#1A1A1A">FROM   Standard_Batting       b</text>
+<text x="60" y="854" font-family="Consolas,Menlo,monospace" font-size="11.5" fill="#1A1A1A">JOIN   Team_Season_Summary    t  ON  b.Season = t.Season</text>
+<text x="60" y="870" font-family="Consolas,Menlo,monospace" font-size="11.5" fill="#1A1A1A">                                 AND b.Team   = t.Team</text>
+<text x="60" y="886" font-family="Consolas,Menlo,monospace" font-size="11.5" fill="#1A1A1A">LEFT JOIN Advanced_Batting    a  ON  b.Season    = a.Season</text>
+<text x="60" y="902" font-family="Consolas,Menlo,monospace" font-size="11.5" fill="#1A1A1A">                                 AND b.Team      = a.Team</text>
+<text x="60" y="918" font-family="Consolas,Menlo,monospace" font-size="11.5" fill="#1A1A1A">                                 AND b.Player_ID = a.Player_ID</text>
+<text x="60" y="934" font-family="Consolas,Menlo,monospace" font-size="11.5" fill="#1A1A1A">WHERE  b.Row_Type = 'data'</text>
+<text x="60" y="950" font-family="Consolas,Menlo,monospace" font-size="11.5" fill="#5A5A5A"></text>
+<text x="60" y="966" font-family="Consolas,Menlo,monospace" font-size="11.5" fill="#5A5A5A">Team_Season_Summary is one row per team-season, so that join is many-to-one</text>
+<text x="60" y="982" font-family="Consolas,Menlo,monospace" font-size="11.5" fill="#5A5A5A">and cannot fan out. Advanced_Batting is league-wide, so its 2TM/3TM rows</text>
+<text x="60" y="998" font-family="Consolas,Menlo,monospace" font-size="11.5" fill="#5A5A5A">simply find no match here - which is the behaviour you want.</text>
+<rect x="790" y="770" width="786" height="252" rx="8" fill="#FFF8E8" stroke="#C9A227" stroke-width="1.6"/>
+<text x="806" y="796" font-size="14" font-weight="700" fill="#1A1A1A">Three things that will silently corrupt a join</text>
+<text x="806" y="822" font-size="12" font-weight="700" fill="#1A1A1A">1.</text>
+<text x="826" y="822" font-size="12" font-weight="700" fill="#1A1A1A">Filter Row_Type = data first.</text>
+<text x="1014" y="822" font-size="12" fill="#5A5A5A">102 of 108 datasets end with footer</text>
+<text x="806" y="839" font-size="12" fill="#5A5A5A">rows (Team Totals, Non-Pitcher Totals). Joined in, they double-count.</text>
+<text x="806" y="864" font-size="12" font-weight="700" fill="#1A1A1A">2.</text>
+<text x="826" y="864" font-size="12" font-weight="700" fill="#1A1A1A">Never union regular_season with advanced.</text>
+<text x="1092" y="864" font-size="12" fill="#5A5A5A">regular_season splits a</text>
+<text x="806" y="881" font-size="12" fill="#5A5A5A">traded player into one row per club; advanced gives one combined</text>
+<text x="806" y="898" font-size="12" fill="#5A5A5A">2TM/3TM row. Both are right. Stacked, the player is counted twice.</text>
+<text x="806" y="923" font-size="12" font-weight="700" fill="#1A1A1A">3.</text>
+<text x="826" y="923" font-size="12" font-weight="700" fill="#1A1A1A">Three franchises changed code mid-window.</text>
+<text x="1092" y="923" font-size="12" fill="#5A5A5A">OAK to ATH in 2025. Group on the pair, not on Team, to trend a</text>
+<text x="806" y="940" font-size="12" fill="#5A5A5A">club.</text>
+<text x="806" y="957" font-size="12" fill="#5A5A5A">trend a club across the period. Houston also switched league in 2013.</text>
+<text x="44" y="1152" font-size="11.5" fill="#5A5A5A">Grain is the thing to watch: a player-season table joined to a team-season table is many-to-one and safe. Joining two tables at different grains without aggregating first will multiply rows.</text>
+</svg>

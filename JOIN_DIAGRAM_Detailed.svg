@@ -1,0 +1,515 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1700" width="1920" height="1700" font-family="Segoe UI,Helvetica,Arial">
+<defs>
+<marker id="ar-st" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M 0 1 L 9 5 L 0 9 z" fill="#2E5C9A"/></marker>
+<marker id="ar-pid" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M 0 1 L 9 5 L 0 9 z" fill="#1F7A6B"/></marker>
+<marker id="ar-pos" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M 0 1 L 9 5 L 0 9 z" fill="#6D4C9F"/></marker>
+<marker id="ar-game" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M 0 1 L 9 5 L 0 9 z" fill="#8C5A2B"/></marker>
+</defs>
+<rect width="1920" height="1700" fill="#FFFFFF"/>
+<text x="44" y="44" font-size="25" font-weight="700" fill="#1A1A1A">MLB Data 2020-2025 &#8212; detailed join map</text>
+<text x="44" y="69" font-size="13" fill="#5A5A5A">108 datasets &#183; 769,168 rows &#183; 6 seasons. No lookup tables - each table carries its own identifiers. Key fields carry a coloured bar; type and an example value sit beside each one. Lines are routed through clear lanes and never cross a table.</text>
+<rect x="44" y="100" width="330" height="176" rx="8" fill="#EEF3FA" stroke="#2E5C9A" stroke-width="1.8"/>
+<rect x="44" y="100" width="330" height="28" rx="8" fill="#2E5C9A"/>
+<rect x="44" y="118" width="330" height="10" fill="#2E5C9A"/>
+<text x="55" y="119.0" font-size="13" font-weight="700" fill="#FFF">Team_Season_Summary</text>
+<text x="363" y="119.0" font-size="10.5" fill="#DCE6F2" text-anchor="end">180 rows</text>
+<rect x="50" y="137" width="4" height="10" fill="#2E5C9A"/>
+<text x="58" y="145" font-family="Consolas,Menlo,monospace" font-size="10.5" font-weight="700" fill="#1A1A1A">Season</text>
+<text x="200" y="145" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">integer</text>
+<text x="256" y="145" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">2020</text>
+<rect x="50" y="151" width="4" height="10" fill="#2E5C9A"/>
+<text x="58" y="159" font-family="Consolas,Menlo,monospace" font-size="10.5" font-weight="700" fill="#1A1A1A">Team</text>
+<text x="200" y="159" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">text</text>
+<text x="256" y="159" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">BOS</text>
+<text x="58" y="173" font-family="Consolas,Menlo,monospace" font-size="10.5" font-weight="400" fill="#5A5A5A">Team_Name</text>
+<text x="200" y="173" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">text</text>
+<text x="256" y="173" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">Boston Red Sox</text>
+<text x="58" y="187" font-family="Consolas,Menlo,monospace" font-size="10.5" font-weight="400" fill="#5A5A5A">League</text>
+<text x="200" y="187" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">text</text>
+<text x="256" y="187" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">AL</text>
+<text x="58" y="201" font-family="Consolas,Menlo,monospace" font-size="10.5" font-weight="400" fill="#5A5A5A">Division</text>
+<text x="200" y="201" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">text</text>
+<text x="256" y="201" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">East</text>
+<text x="58" y="215" font-family="Consolas,Menlo,monospace" font-size="10.5" font-weight="400" fill="#5A5A5A">W, L, Division_Finish</text>
+<text x="200" y="215" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">integer</text>
+<text x="256" y="215" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">96</text>
+<text x="56" y="232" font-size="9.8" fill="#7A7A7A" font-style="italic">one row per club per season</text>
+<text x="56" y="244" font-size="9.8" fill="#7A7A7A" font-style="italic">no Row_Type - every row is data</text>
+<rect x="44" y="296" width="330" height="150" rx="8" fill="#EEF3FA" stroke="#2E5C9A" stroke-width="1.8"/>
+<rect x="44" y="296" width="330" height="28" rx="8" fill="#2E5C9A"/>
+<rect x="44" y="314" width="330" height="10" fill="#2E5C9A"/>
+<text x="55" y="315.0" font-size="13" font-weight="700" fill="#FFF">Standings / Standings_Expanded</text>
+<text x="363" y="315.0" font-size="10.5" fill="#DCE6F2" text-anchor="end">180 each</text>
+<rect x="50" y="333" width="4" height="10" fill="#2E5C9A"/>
+<text x="58" y="341" font-family="Consolas,Menlo,monospace" font-size="10.5" font-weight="700" fill="#1A1A1A">Season</text>
+<text x="200" y="341" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">integer</text>
+<text x="256" y="341" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">2020</text>
+<rect x="50" y="347" width="4" height="10" fill="#2E5C9A"/>
+<text x="58" y="355" font-family="Consolas,Menlo,monospace" font-size="10.5" font-weight="700" fill="#1A1A1A">Team</text>
+<text x="200" y="355" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">text</text>
+<text x="256" y="355" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">BOS</text>
+<text x="58" y="369" font-family="Consolas,Menlo,monospace" font-size="10.5" font-weight="400" fill="#5A5A5A">W, L, W-L%, GB</text>
+<text x="200" y="369" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">mixed</text>
+<text x="256" y="369" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">96</text>
+<text x="58" y="383" font-family="Consolas,Menlo,monospace" font-size="10.5" font-weight="400" fill="#5A5A5A">Home, Road, 1Run, ExInn</text>
+<text x="200" y="383" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">text</text>
+<text x="256" y="383" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">51-30</text>
+<text x="56" y="400" font-size="9.8" fill="#7A7A7A" font-style="italic">one row per club per season</text>
+<rect x="44" y="466" width="330" height="168" rx="8" fill="#EEF3FA" stroke="#2E5C9A" stroke-width="1.8"/>
+<rect x="44" y="466" width="330" height="28" rx="8" fill="#2E5C9A"/>
+<rect x="44" y="484" width="330" height="10" fill="#2E5C9A"/>
+<text x="55" y="485.0" font-size="13" font-weight="700" fill="#FFF">Team_* aggregates</text>
+<text x="363" y="485.0" font-size="10.5" fill="#DCE6F2" text-anchor="end">26 tables</text>
+<rect x="50" y="503" width="4" height="10" fill="#2E5C9A"/>
+<text x="58" y="511" font-family="Consolas,Menlo,monospace" font-size="10.5" font-weight="700" fill="#1A1A1A">Season</text>
+<text x="200" y="511" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">integer</text>
+<text x="256" y="511" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">2020</text>
+<rect x="50" y="517" width="4" height="10" fill="#2E5C9A"/>
+<text x="58" y="525" font-family="Consolas,Menlo,monospace" font-size="10.5" font-weight="700" fill="#1A1A1A">Team</text>
+<text x="200" y="525" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">text</text>
+<text x="256" y="525" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">BOS</text>
+<text x="58" y="539" font-family="Consolas,Menlo,monospace" font-size="10.5" font-weight="400" fill="#5A5A5A">Team_Name</text>
+<text x="200" y="539" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">text</text>
+<text x="256" y="539" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">Boston Red Sox</text>
+<text x="58" y="553" font-family="Consolas,Menlo,monospace" font-size="10.5" font-weight="400" fill="#5A5A5A">(stat columns vary)</text>
+<text x="200" y="553" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A"></text>
+<text x="256" y="553" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A"></text>
+<text x="56" y="570" font-size="9.8" fill="#7A7A7A" font-style="italic">Team_Standard_Batting, Team_Miscellaneous,</text>
+<text x="56" y="582" font-size="9.8" fill="#7A7A7A" font-style="italic">Team_Attendance, Team_Advanced_Fielding_*</text>
+<text x="56" y="594" font-size="9.8" fill="#7A7A7A" font-style="italic">some carry LgAvg / LgTot rows - filter them</text>
+<rect x="484" y="100" width="390" height="190" rx="8" fill="#EAF5F2" stroke="#1F7A6B" stroke-width="1.8"/>
+<rect x="484" y="100" width="390" height="28" rx="8" fill="#1F7A6B"/>
+<rect x="484" y="118" width="390" height="10" fill="#1F7A6B"/>
+<text x="495" y="119.0" font-size="13" font-weight="700" fill="#FFF">Standard_Batting / Standard_Pitching</text>
+<text x="863" y="119.0" font-size="10.5" fill="#DCE6F2" text-anchor="end">5,797 / 5,908</text>
+<rect x="490" y="137" width="4" height="10" fill="#1F7A6B"/>
+<text x="498" y="145" font-family="Consolas,Menlo,monospace" font-size="10.5" font-weight="700" fill="#1A1A1A">Season</text>
+<text x="640" y="145" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">integer</text>
+<text x="696" y="145" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">2020</text>
+<rect x="490" y="151" width="4" height="10" fill="#1F7A6B"/>
+<text x="498" y="159" font-family="Consolas,Menlo,monospace" font-size="10.5" font-weight="700" fill="#1A1A1A">Team</text>
+<text x="640" y="159" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">text</text>
+<text x="696" y="159" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">BOS</text>
+<rect x="490" y="165" width="4" height="10" fill="#1F7A6B"/>
+<text x="498" y="173" font-family="Consolas,Menlo,monospace" font-size="10.5" font-weight="700" fill="#1A1A1A">Player_ID</text>
+<text x="640" y="173" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">text</text>
+<text x="696" y="173" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">ortizda01</text>
+<text x="498" y="187" font-family="Consolas,Menlo,monospace" font-size="10.5" font-weight="400" fill="#5A5A5A">Player</text>
+<text x="640" y="187" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">text</text>
+<text x="696" y="187" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">David Ortiz</text>
+<text x="498" y="201" font-family="Consolas,Menlo,monospace" font-size="10.5" font-weight="400" fill="#5A5A5A">Bats / Throws</text>
+<text x="640" y="201" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">text</text>
+<text x="696" y="201" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">L</text>
+<text x="498" y="215" font-family="Consolas,Menlo,monospace" font-size="10.5" font-weight="400" fill="#5A5A5A">Pos</text>
+<text x="640" y="215" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">text</text>
+<text x="696" y="215" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">*D/3</text>
+<rect x="490" y="221" width="4" height="10" fill="#1F7A6B"/>
+<text x="498" y="229" font-family="Consolas,Menlo,monospace" font-size="10.5" font-weight="700" fill="#1A1A1A">Row_Type</text>
+<text x="640" y="229" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">text</text>
+<text x="696" y="229" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">data</text>
+<text x="496" y="246" font-size="9.8" fill="#7A7A7A" font-style="italic">team-scoped: a traded player appears once per club</text>
+<text x="496" y="258" font-size="9.8" fill="#7A7A7A" font-style="italic">Pos is a BR code string here, NOT a join key</text>
+<rect x="484" y="310" width="390" height="136" rx="8" fill="#EAF5F2" stroke="#1F7A6B" stroke-width="1.8"/>
+<rect x="484" y="310" width="390" height="28" rx="8" fill="#1F7A6B"/>
+<rect x="484" y="328" width="390" height="10" fill="#1F7A6B"/>
+<text x="495" y="329.0" font-size="13" font-weight="700" fill="#FFF">Value_Batting / Value_Pitching</text>
+<text x="863" y="329.0" font-size="10.5" fill="#DCE6F2" text-anchor="end">5,797 / 5,908</text>
+<rect x="490" y="347" width="4" height="10" fill="#1F7A6B"/>
+<text x="498" y="355" font-family="Consolas,Menlo,monospace" font-size="10.5" font-weight="700" fill="#1A1A1A">Season</text>
+<text x="640" y="355" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">integer</text>
+<text x="696" y="355" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">2020</text>
+<rect x="490" y="361" width="4" height="10" fill="#1F7A6B"/>
+<text x="498" y="369" font-family="Consolas,Menlo,monospace" font-size="10.5" font-weight="700" fill="#1A1A1A">Team</text>
+<text x="640" y="369" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">text</text>
+<text x="696" y="369" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">BOS</text>
+<rect x="490" y="375" width="4" height="10" fill="#1F7A6B"/>
+<text x="498" y="383" font-family="Consolas,Menlo,monospace" font-size="10.5" font-weight="700" fill="#1A1A1A">Player_ID</text>
+<text x="640" y="383" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">text</text>
+<text x="696" y="383" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">ortizda01</text>
+<rect x="490" y="389" width="4" height="10" fill="#1F7A6B"/>
+<text x="498" y="397" font-family="Consolas,Menlo,monospace" font-size="10.5" font-weight="700" fill="#1A1A1A">Row_Type</text>
+<text x="640" y="397" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">text</text>
+<text x="696" y="397" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">data</text>
+<text x="496" y="414" font-size="9.8" fill="#7A7A7A" font-style="italic">identical grain to Standard - a safe 1:1 join</text>
+<rect x="484" y="466" width="390" height="176" rx="8" fill="#EAF5F2" stroke="#1F7A6B" stroke-width="1.8"/>
+<rect x="484" y="466" width="390" height="28" rx="8" fill="#1F7A6B"/>
+<rect x="484" y="484" width="390" height="10" fill="#1F7A6B"/>
+<text x="495" y="485.0" font-size="13" font-weight="700" fill="#FFF">Advanced_* (league pages)</text>
+<text x="863" y="485.0" font-size="10.5" fill="#DCE6F2" text-anchor="end">19 tables</text>
+<rect x="490" y="503" width="4" height="10" fill="#1F7A6B"/>
+<text x="498" y="511" font-family="Consolas,Menlo,monospace" font-size="10.5" font-weight="700" fill="#1A1A1A">Season</text>
+<text x="640" y="511" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">integer</text>
+<text x="696" y="511" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">2020</text>
+<rect x="490" y="517" width="4" height="10" fill="#1F7A6B"/>
+<text x="498" y="525" font-family="Consolas,Menlo,monospace" font-size="10.5" font-weight="700" fill="#1A1A1A">Team</text>
+<text x="640" y="525" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">text</text>
+<text x="696" y="525" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">BOS  /  2TM</text>
+<rect x="490" y="531" width="4" height="10" fill="#1F7A6B"/>
+<text x="498" y="539" font-family="Consolas,Menlo,monospace" font-size="10.5" font-weight="700" fill="#1A1A1A">Player_ID</text>
+<text x="640" y="539" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">text</text>
+<text x="696" y="539" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">ortizda01</text>
+<text x="498" y="553" font-family="Consolas,Menlo,monospace" font-size="10.5" font-weight="400" fill="#5A5A5A">Name</text>
+<text x="640" y="553" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">text</text>
+<text x="696" y="553" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">David Ortiz</text>
+<rect x="490" y="559" width="4" height="10" fill="#1F7A6B"/>
+<text x="498" y="567" font-family="Consolas,Menlo,monospace" font-size="10.5" font-weight="700" fill="#1A1A1A">Row_Type</text>
+<text x="640" y="567" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">text</text>
+<text x="696" y="567" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">data</text>
+<text x="496" y="584" font-size="9.8" fill="#7A7A7A" font-style="italic">league-wide: a traded player has ONE row, Team = 2TM/3TM</text>
+<text x="496" y="596" font-size="9.8" fill="#7A7A7A" font-style="italic">those rows will not match a team-scoped table - by design</text>
+<text x="496" y="608" font-size="9.8" fill="#7A7A7A" font-style="italic">the name column is Name here, Player elsewhere</text>
+<rect x="484" y="662" width="390" height="150" rx="8" fill="#EAF5F2" stroke="#1F7A6B" stroke-width="1.8"/>
+<rect x="484" y="662" width="390" height="28" rx="8" fill="#1F7A6B"/>
+<rect x="484" y="680" width="390" height="10" fill="#1F7A6B"/>
+<text x="495" y="681.0" font-size="13" font-weight="700" fill="#FFF">Rosters, personnel, events</text>
+<text x="863" y="681.0" font-size="10.5" fill="#DCE6F2" text-anchor="end">23 tables</text>
+<rect x="490" y="699" width="4" height="10" fill="#1F7A6B"/>
+<text x="498" y="707" font-family="Consolas,Menlo,monospace" font-size="10.5" font-weight="700" fill="#1A1A1A">Season</text>
+<text x="640" y="707" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">integer</text>
+<text x="696" y="707" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">2020</text>
+<rect x="490" y="713" width="4" height="10" fill="#1F7A6B"/>
+<text x="498" y="721" font-family="Consolas,Menlo,monospace" font-size="10.5" font-weight="700" fill="#1A1A1A">Team</text>
+<text x="640" y="721" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">text</text>
+<text x="696" y="721" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">BOS</text>
+<rect x="490" y="727" width="4" height="10" fill="#1F7A6B"/>
+<text x="498" y="735" font-family="Consolas,Menlo,monospace" font-size="10.5" font-weight="700" fill="#1A1A1A">Player_ID</text>
+<text x="640" y="735" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">text</text>
+<text x="696" y="735" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">ortizda01</text>
+<text x="498" y="749" font-family="Consolas,Menlo,monospace" font-size="10.5" font-weight="400" fill="#5A5A5A">Tm</text>
+<text x="640" y="749" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">text</text>
+<text x="696" y="749" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">BOS</text>
+<text x="496" y="766" font-size="9.8" fill="#7A7A7A" font-style="italic">Transactions, Free_Agent_Signings, MVP_Voting,</text>
+<text x="496" y="778" font-size="9.8" fill="#7A7A7A" font-style="italic">Full_Season_Roster, Coaching_Staff, Debuts, Rookies</text>
+<text x="496" y="790" font-size="9.8" fill="#7A7A7A" font-style="italic">voting tables carry Name and Tm as well as Player_ID</text>
+<rect x="984" y="100" width="340" height="190" rx="8" fill="#F2EEF8" stroke="#6D4C9F" stroke-width="1.8"/>
+<rect x="984" y="100" width="340" height="28" rx="8" fill="#6D4C9F"/>
+<rect x="984" y="118" width="340" height="10" fill="#6D4C9F"/>
+<text x="995" y="119.0" font-size="13" font-weight="700" fill="#FFF">Standard_Fielding_By_Position</text>
+<text x="1313" y="119.0" font-size="10.5" fill="#DCE6F2" text-anchor="end">18,324 rows</text>
+<rect x="990" y="137" width="4" height="10" fill="#6D4C9F"/>
+<text x="998" y="145" font-family="Consolas,Menlo,monospace" font-size="10.5" font-weight="700" fill="#1A1A1A">Season</text>
+<text x="1140" y="145" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">integer</text>
+<text x="1196" y="145" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">2020</text>
+<rect x="990" y="151" width="4" height="10" fill="#6D4C9F"/>
+<text x="998" y="159" font-family="Consolas,Menlo,monospace" font-size="10.5" font-weight="700" fill="#1A1A1A">Team</text>
+<text x="1140" y="159" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">text</text>
+<text x="1196" y="159" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">BOS</text>
+<rect x="990" y="165" width="4" height="10" fill="#6D4C9F"/>
+<text x="998" y="173" font-family="Consolas,Menlo,monospace" font-size="10.5" font-weight="700" fill="#1A1A1A">Player_ID</text>
+<text x="1140" y="173" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">text</text>
+<text x="1196" y="173" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">ortizda01</text>
+<rect x="990" y="179" width="4" height="10" fill="#6D4C9F"/>
+<text x="998" y="187" font-family="Consolas,Menlo,monospace" font-size="10.5" font-weight="700" fill="#1A1A1A">Position</text>
+<text x="1140" y="187" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">text</text>
+<text x="1196" y="187" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">1B</text>
+<text x="998" y="201" font-family="Consolas,Menlo,monospace" font-size="10.5" font-weight="400" fill="#5A5A5A">Innings, PO, A, E, Fld%</text>
+<text x="1140" y="201" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">number</text>
+<text x="1196" y="201" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">1178.1</text>
+<text x="996" y="218" font-size="9.8" fill="#7A7A7A" font-style="italic">one row per player PER POSITION per season</text>
+<text x="996" y="230" font-size="9.8" fill="#7A7A7A" font-style="italic">values: P C 1B 2B 3B SS LF CF RF OF</text>
+<text x="996" y="242" font-size="9.8" fill="#7A7A7A" font-style="italic">has OF, has no DH</text>
+<rect x="984" y="310" width="340" height="176" rx="8" fill="#F2EEF8" stroke="#6D4C9F" stroke-width="1.8"/>
+<rect x="984" y="310" width="340" height="28" rx="8" fill="#6D4C9F"/>
+<rect x="984" y="328" width="340" height="10" fill="#6D4C9F"/>
+<text x="995" y="329.0" font-size="13" font-weight="700" fill="#FFF">Advanced_Fielding_&lt;POS&gt;</text>
+<text x="1313" y="329.0" font-size="10.5" fill="#DCE6F2" text-anchor="end">10 tables</text>
+<rect x="990" y="347" width="4" height="10" fill="#6D4C9F"/>
+<text x="998" y="355" font-family="Consolas,Menlo,monospace" font-size="10.5" font-weight="700" fill="#1A1A1A">Season</text>
+<text x="1140" y="355" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">integer</text>
+<text x="1196" y="355" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">2020</text>
+<rect x="990" y="361" width="4" height="10" fill="#6D4C9F"/>
+<text x="998" y="369" font-family="Consolas,Menlo,monospace" font-size="10.5" font-weight="700" fill="#1A1A1A">Team</text>
+<text x="1140" y="369" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">text</text>
+<text x="1196" y="369" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">BOS</text>
+<rect x="990" y="375" width="4" height="10" fill="#6D4C9F"/>
+<text x="998" y="383" font-family="Consolas,Menlo,monospace" font-size="10.5" font-weight="700" fill="#1A1A1A">Player_ID</text>
+<text x="1140" y="383" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">text</text>
+<text x="1196" y="383" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">varitja01</text>
+<rect x="990" y="389" width="4" height="10" fill="#6D4C9F"/>
+<text x="998" y="397" font-family="Consolas,Menlo,monospace" font-size="10.5" font-weight="700" fill="#1A1A1A">Position</text>
+<text x="1140" y="397" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">text</text>
+<text x="1196" y="397" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">C</text>
+<text x="996" y="414" font-size="9.8" fill="#7A7A7A" font-style="italic">_C _1B _2B _3B _SS _LF _CF _RF _P</text>
+<text x="996" y="426" font-size="9.8" fill="#7A7A7A" font-style="italic">_C_Baserunning adds framing and SB defence</text>
+<text x="996" y="438" font-size="9.8" fill="#7A7A7A" font-style="italic">column sets differ by position - do not union blindly</text>
+<rect x="984" y="506" width="340" height="136" rx="8" fill="#F2EEF8" stroke="#6D4C9F" stroke-width="1.8"/>
+<rect x="984" y="506" width="340" height="28" rx="8" fill="#6D4C9F"/>
+<rect x="984" y="524" width="340" height="10" fill="#6D4C9F"/>
+<text x="995" y="525.0" font-size="13" font-weight="700" fill="#FFF">Team_Advanced_Fielding_&lt;POS&gt;</text>
+<text x="1313" y="525.0" font-size="10.5" fill="#DCE6F2" text-anchor="end">10 tables</text>
+<rect x="990" y="543" width="4" height="10" fill="#6D4C9F"/>
+<text x="998" y="551" font-family="Consolas,Menlo,monospace" font-size="10.5" font-weight="700" fill="#1A1A1A">Season</text>
+<text x="1140" y="551" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">integer</text>
+<text x="1196" y="551" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">2020</text>
+<rect x="990" y="557" width="4" height="10" fill="#6D4C9F"/>
+<text x="998" y="565" font-family="Consolas,Menlo,monospace" font-size="10.5" font-weight="700" fill="#1A1A1A">Team</text>
+<text x="1140" y="565" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">text</text>
+<text x="1196" y="565" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">BOS</text>
+<rect x="990" y="571" width="4" height="10" fill="#6D4C9F"/>
+<text x="998" y="579" font-family="Consolas,Menlo,monospace" font-size="10.5" font-weight="700" fill="#1A1A1A">Position</text>
+<text x="1140" y="579" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">text</text>
+<text x="1196" y="579" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">C</text>
+<text x="996" y="596" font-size="9.8" fill="#7A7A7A" font-style="italic">team totals at each position</text>
+<text x="996" y="608" font-size="9.8" fill="#7A7A7A" font-style="italic">no Player_ID on these tables</text>
+<rect x="1434" y="100" width="400" height="204" rx="8" fill="#FBF4EC" stroke="#8C5A2B" stroke-width="1.8"/>
+<rect x="1434" y="100" width="400" height="28" rx="8" fill="#8C5A2B"/>
+<rect x="1434" y="118" width="400" height="10" fill="#8C5A2B"/>
+<text x="1445" y="119.0" font-size="13" font-weight="700" fill="#FFF">Schedule_Results</text>
+<text x="1823" y="119.0" font-size="10.5" fill="#DCE6F2" text-anchor="end">26,092 rows</text>
+<rect x="1440" y="137" width="4" height="10" fill="#8C5A2B"/>
+<text x="1448" y="145" font-family="Consolas,Menlo,monospace" font-size="10.5" font-weight="700" fill="#1A1A1A">Season</text>
+<text x="1590" y="145" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">integer</text>
+<text x="1646" y="145" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">2020</text>
+<rect x="1440" y="151" width="4" height="10" fill="#8C5A2B"/>
+<text x="1448" y="159" font-family="Consolas,Menlo,monospace" font-size="10.5" font-weight="700" fill="#1A1A1A">Team</text>
+<text x="1590" y="159" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">text</text>
+<text x="1646" y="159" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">BOS</text>
+<rect x="1440" y="165" width="4" height="10" fill="#8C5A2B"/>
+<text x="1448" y="173" font-family="Consolas,Menlo,monospace" font-size="10.5" font-weight="700" fill="#1A1A1A">Gm#</text>
+<text x="1590" y="173" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">integer</text>
+<text x="1646" y="173" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">1 .. 162</text>
+<rect x="1440" y="179" width="4" height="10" fill="#8C5A2B"/>
+<text x="1448" y="187" font-family="Consolas,Menlo,monospace" font-size="10.5" font-weight="700" fill="#1A1A1A">Boxscore_URL</text>
+<text x="1590" y="187" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">text</text>
+<text x="1646" y="187" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">...BOS202008310</text>
+<text x="1448" y="201" font-family="Consolas,Menlo,monospace" font-size="10.5" font-weight="400" fill="#5A5A5A">Game_Date</text>
+<text x="1590" y="201" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">date</text>
+<text x="1646" y="201" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">2007-04-02</text>
+<text x="1448" y="215" font-family="Consolas,Menlo,monospace" font-size="10.5" font-weight="400" fill="#5A5A5A">Opp</text>
+<text x="1590" y="215" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">text</text>
+<text x="1646" y="215" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">KCR</text>
+<rect x="1440" y="221" width="4" height="10" fill="#8C5A2B"/>
+<text x="1448" y="229" font-family="Consolas,Menlo,monospace" font-size="10.5" font-weight="700" fill="#1A1A1A">Row_Type</text>
+<text x="1590" y="229" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">text</text>
+<text x="1646" y="229" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">data</text>
+<text x="1446" y="246" font-size="9.8" fill="#7A7A7A" font-style="italic">two rows per game, one per club: 13,046 distinct games</text>
+<text x="1446" y="258" font-size="9.8" fill="#7A7A7A" font-style="italic">the game-number column is named Gm#, not Game_Num</text>
+<rect x="1434" y="324" width="400" height="176" rx="8" fill="#FBF4EC" stroke="#8C5A2B" stroke-width="1.8"/>
+<rect x="1434" y="324" width="400" height="28" rx="8" fill="#8C5A2B"/>
+<rect x="1434" y="342" width="400" height="10" fill="#8C5A2B"/>
+<text x="1445" y="343.0" font-size="13" font-weight="700" fill="#FFF">Batting_Orders</text>
+<text x="1823" y="343.0" font-size="10.5" fill="#DCE6F2" text-anchor="end">234,828 rows</text>
+<rect x="1440" y="361" width="4" height="10" fill="#8C5A2B"/>
+<text x="1448" y="369" font-family="Consolas,Menlo,monospace" font-size="10.5" font-weight="700" fill="#1A1A1A">Season</text>
+<text x="1590" y="369" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">integer</text>
+<text x="1646" y="369" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">2020</text>
+<rect x="1440" y="375" width="4" height="10" fill="#8C5A2B"/>
+<text x="1448" y="383" font-family="Consolas,Menlo,monospace" font-size="10.5" font-weight="700" fill="#1A1A1A">Team</text>
+<text x="1590" y="383" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">text</text>
+<text x="1646" y="383" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">BOS</text>
+<rect x="1440" y="389" width="4" height="10" fill="#8C5A2B"/>
+<text x="1448" y="397" font-family="Consolas,Menlo,monospace" font-size="10.5" font-weight="700" fill="#1A1A1A">Game_Num</text>
+<text x="1590" y="397" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">integer</text>
+<text x="1646" y="397" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">1 .. 162</text>
+<rect x="1440" y="403" width="4" height="10" fill="#8C5A2B"/>
+<text x="1448" y="411" font-family="Consolas,Menlo,monospace" font-size="10.5" font-weight="700" fill="#1A1A1A">Player_ID</text>
+<text x="1590" y="411" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">text</text>
+<text x="1646" y="411" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">ortizda01</text>
+<rect x="1440" y="417" width="4" height="10" fill="#8C5A2B"/>
+<text x="1448" y="425" font-family="Consolas,Menlo,monospace" font-size="10.5" font-weight="700" fill="#1A1A1A">Position</text>
+<text x="1590" y="425" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">text</text>
+<text x="1646" y="425" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">DH</text>
+<text x="1448" y="439" font-family="Consolas,Menlo,monospace" font-size="10.5" font-weight="400" fill="#5A5A5A">Batting_Order_Slot</text>
+<text x="1590" y="439" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">integer</text>
+<text x="1646" y="439" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">3</text>
+<text x="1448" y="453" font-family="Consolas,Menlo,monospace" font-size="10.5" font-weight="400" fill="#5A5A5A">Player</text>
+<text x="1590" y="453" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">text</text>
+<text x="1646" y="453" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">Ortiz</text>
+<text x="1446" y="470" font-size="9.8" fill="#7A7A7A" font-style="italic">exactly 9 rows per team-game</text>
+<text x="1446" y="482" font-size="9.8" fill="#7A7A7A" font-style="italic">Player is a SURNAME only - never join on it</text>
+<rect x="1434" y="520" width="400" height="162" rx="8" fill="#FBF4EC" stroke="#8C5A2B" stroke-width="1.8"/>
+<rect x="1434" y="520" width="400" height="28" rx="8" fill="#8C5A2B"/>
+<rect x="1434" y="538" width="400" height="10" fill="#8C5A2B"/>
+<text x="1445" y="539.0" font-size="13" font-weight="700" fill="#FFF">Defensive_Lineups</text>
+<text x="1823" y="539.0" font-size="10.5" fill="#DCE6F2" text-anchor="end">258,472 rows</text>
+<rect x="1440" y="557" width="4" height="10" fill="#8C5A2B"/>
+<text x="1448" y="565" font-family="Consolas,Menlo,monospace" font-size="10.5" font-weight="700" fill="#1A1A1A">Season</text>
+<text x="1590" y="565" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">integer</text>
+<text x="1646" y="565" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">2020</text>
+<rect x="1440" y="571" width="4" height="10" fill="#8C5A2B"/>
+<text x="1448" y="579" font-family="Consolas,Menlo,monospace" font-size="10.5" font-weight="700" fill="#1A1A1A">Team</text>
+<text x="1590" y="579" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">text</text>
+<text x="1646" y="579" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">BOS</text>
+<rect x="1440" y="585" width="4" height="10" fill="#8C5A2B"/>
+<text x="1448" y="593" font-family="Consolas,Menlo,monospace" font-size="10.5" font-weight="700" fill="#1A1A1A">Game_Num</text>
+<text x="1590" y="593" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">integer</text>
+<text x="1646" y="593" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">1 .. 162</text>
+<rect x="1440" y="599" width="4" height="10" fill="#8C5A2B"/>
+<text x="1448" y="607" font-family="Consolas,Menlo,monospace" font-size="10.5" font-weight="700" fill="#1A1A1A">Player_ID</text>
+<text x="1590" y="607" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">text</text>
+<text x="1646" y="607" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">varitja01</text>
+<rect x="1440" y="613" width="4" height="10" fill="#8C5A2B"/>
+<text x="1448" y="621" font-family="Consolas,Menlo,monospace" font-size="10.5" font-weight="700" fill="#1A1A1A">Position</text>
+<text x="1590" y="621" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">text</text>
+<text x="1646" y="621" font-family="Consolas,Menlo,monospace" font-size="9.5" fill="#8A8A8A">C</text>
+<text x="1446" y="638" font-size="9.8" fill="#7A7A7A" font-style="italic">one row per fielding position per team-game</text>
+<text x="1446" y="650" font-size="9.8" fill="#7A7A7A" font-style="italic">values: P C 1B 2B 3B SS LF CF RF DH</text>
+<text x="1446" y="662" font-size="9.8" fill="#7A7A7A" font-style="italic">has DH, has no OF</text>
+<path d="M 484 150 L 415 150 L 415 140 L 374 140" fill="none" stroke="#2E5C9A" stroke-width="2" opacity="0.92" stroke-linejoin="round" marker-end="url(#ar-st)"/>
+<text x="415" y="130" font-family="Consolas,Menlo,monospace" font-size="10" fill="#2E5C9A" text-anchor="middle">Season, Team</text>
+<text x="415" y="142" font-size="10" font-weight="700" fill="#2E5C9A" text-anchor="middle">N:1</text>
+<path d="M 484 360 L 427 360 L 427 352 L 374 352" fill="none" stroke="#2E5C9A" stroke-width="2" opacity="0.92" stroke-linejoin="round" marker-end="url(#ar-st)"/>
+<text x="427" y="342" font-family="Consolas,Menlo,monospace" font-size="10" fill="#2E5C9A" text-anchor="middle">Season, Team</text>
+<text x="427" y="354" font-size="10" font-weight="700" fill="#2E5C9A" text-anchor="middle">N:1</text>
+<path d="M 484 520 L 439 520 L 439 512 L 374 512" fill="none" stroke="#2E5C9A" stroke-width="2" opacity="0.92" stroke-linejoin="round" marker-end="url(#ar-st)"/>
+<text x="439" y="502" font-family="Consolas,Menlo,monospace" font-size="10" fill="#2E5C9A" text-anchor="middle">Season, Team</text>
+<text x="439" y="514" font-size="10" font-weight="700" fill="#2E5C9A" text-anchor="middle">N:1</text>
+<path d="M 484 740 L 451 740 L 451 600 L 374 600" fill="none" stroke="#2E5C9A" stroke-width="2" opacity="0.92" stroke-linejoin="round" marker-end="url(#ar-st)"/>
+<text x="451" y="590" font-family="Consolas,Menlo,monospace" font-size="10" fill="#2E5C9A" text-anchor="middle">Season, Team</text>
+<text x="451" y="602" font-size="10" font-weight="700" fill="#2E5C9A" text-anchor="middle">N:1</text>
+<path d="M 984 150 L 919 150 L 919 180 L 874 180" fill="none" stroke="#1F7A6B" stroke-width="2" opacity="0.92" stroke-linejoin="round" marker-end="url(#ar-pid)"/>
+<text x="919" y="129" font-family="Consolas,Menlo,monospace" font-size="10" fill="#1F7A6B" text-anchor="middle">Season, Team,</text>
+<text x="919" y="140" font-family="Consolas,Menlo,monospace" font-size="10" fill="#1F7A6B" text-anchor="middle">Player_ID</text>
+<text x="919" y="152" font-size="10" font-weight="700" fill="#1F7A6B" text-anchor="middle">N:1</text>
+<path d="M 984 390 L 935 390 L 935 250 L 874 250" fill="none" stroke="#1F7A6B" stroke-width="2" opacity="0.92" stroke-linejoin="round" marker-end="url(#ar-pid)"/>
+<text x="935" y="229" font-family="Consolas,Menlo,monospace" font-size="10" fill="#1F7A6B" text-anchor="middle">Season, Team,</text>
+<text x="935" y="240" font-family="Consolas,Menlo,monospace" font-size="10" fill="#1F7A6B" text-anchor="middle">Player_ID</text>
+<text x="935" y="252" font-size="10" font-weight="700" fill="#1F7A6B" text-anchor="middle">N:1</text>
+<path d="M 984 580 L 951 580 L 951 845 L 463 845 L 463 560 L 374 560" fill="none" stroke="#2E5C9A" stroke-width="2" opacity="0.92" stroke-linejoin="round" marker-end="url(#ar-st)"/>
+<text x="700" y="837" font-family="Consolas,Menlo,monospace" font-size="10" fill="#2E5C9A" text-anchor="middle">Season, Team</text>
+<text x="700" y="849" font-size="10" font-weight="700" fill="#2E5C9A" text-anchor="middle">N:1</text>
+<path d="M 1434 150 L 1363 150 L 1363 845 L 395 845 L 395 170 L 374 170" fill="none" stroke="#2E5C9A" stroke-width="2" opacity="0.92" stroke-linejoin="round" marker-end="url(#ar-st)"/>
+<text x="1000" y="837" font-family="Consolas,Menlo,monospace" font-size="10" fill="#2E5C9A" text-anchor="middle">Season, Team</text>
+<text x="1000" y="849" font-size="10" font-weight="700" fill="#2E5C9A" text-anchor="middle">N:1</text>
+<path d="M 1434 400 L 1379 400 L 1379 845 L 951 845 L 951 215 L 874 215" fill="none" stroke="#1F7A6B" stroke-width="2" opacity="0.92" stroke-linejoin="round" marker-end="url(#ar-pid)"/>
+<text x="1080" y="826" font-family="Consolas,Menlo,monospace" font-size="10" fill="#1F7A6B" text-anchor="middle">Season, Team,</text>
+<text x="1080" y="837" font-family="Consolas,Menlo,monospace" font-size="10" fill="#1F7A6B" text-anchor="middle">Player_ID</text>
+<text x="1080" y="849" font-size="10" font-weight="700" fill="#1F7A6B" text-anchor="middle">N:1</text>
+<path d="M 1434 412 L 1395 412 L 1395 202 L 1434 202" fill="none" stroke="#8C5A2B" stroke-width="2" opacity="0.92" stroke-linejoin="round" marker-end="url(#ar-game)"/>
+<text x="1469" y="194" font-family="Consolas,Menlo,monospace" font-size="10" fill="#8C5A2B" text-anchor="middle">Game_Num = Gm#</text>
+<path d="M 1434 601 L 1411 601 L 1411 202 L 1434 202" fill="none" stroke="#8C5A2B" stroke-width="2" opacity="0.92" stroke-linejoin="round" marker-end="url(#ar-game)"/>
+<text x="1485" y="194" font-family="Consolas,Menlo,monospace" font-size="10" fill="#8C5A2B" text-anchor="middle">Game_Num = Gm#</text>
+<rect x="44" y="890" width="888" height="330" rx="8" fill="#F7F9FC" stroke="#2E5C9A" stroke-width="1.6"/>
+<text x="62" y="917" font-size="14.5" font-weight="700" fill="#1A1A1A">Key field dictionary</text>
+<text x="62" y="946" font-family="Consolas,Menlo,monospace" font-size="11.5" font-weight="700" fill="#1A1A1A">Season</text>
+<text x="180" y="946" font-family="Consolas,Menlo,monospace" font-size="10" fill="#8A8A8A">integer</text>
+<text x="248" y="946" font-family="Consolas,Menlo,monospace" font-size="10" fill="#5A5A5A">2020 .. 2025</text>
+<text x="382" y="946" font-size="10" fill="#2E5C9A">all 108 tables</text>
+<text x="530" y="946" font-size="10.5" fill="#5A5A5A">Always an integer, never text.</text>
+<text x="62" y="979" font-family="Consolas,Menlo,monospace" font-size="11.5" font-weight="700" fill="#1A1A1A">Team</text>
+<text x="180" y="979" font-family="Consolas,Menlo,monospace" font-size="10" fill="#8A8A8A">text</text>
+<text x="248" y="979" font-family="Consolas,Menlo,monospace" font-size="10" fill="#5A5A5A">BOS, 2TM</text>
+<text x="382" y="979" font-size="10" fill="#2E5C9A">107 of 108</text>
+<text x="530" y="979" font-size="10.5" fill="#5A5A5A">Franchise code, 2-3 chars. 2TM/3TM appears on league-wide tables only.</text>
+<text x="62" y="1012" font-family="Consolas,Menlo,monospace" font-size="11.5" font-weight="700" fill="#1A1A1A">Player_ID</text>
+<text x="180" y="1012" font-family="Consolas,Menlo,monospace" font-size="10" fill="#8A8A8A">text</text>
+<text x="248" y="1012" font-family="Consolas,Menlo,monospace" font-size="10" fill="#5A5A5A">ortizda01</text>
+<text x="382" y="1012" font-size="10" fill="#2E5C9A">67 of 108</text>
+<text x="530" y="1012" font-size="10.5" fill="#5A5A5A">Stable Baseball-Reference id. The only safe person key.</text>
+<text x="62" y="1045" font-family="Consolas,Menlo,monospace" font-size="11.5" font-weight="700" fill="#1A1A1A">Position</text>
+<text x="180" y="1045" font-family="Consolas,Menlo,monospace" font-size="10" fill="#8A8A8A">text</text>
+<text x="248" y="1045" font-family="Consolas,Menlo,monospace" font-size="10" fill="#5A5A5A">C, 1B, LF, DH</text>
+<text x="382" y="1045" font-size="10" fill="#2E5C9A">24 of 108</text>
+<text x="530" y="1045" font-size="10.5" fill="#5A5A5A">Value sets differ: fielding has OF, lineups have DH.</text>
+<text x="62" y="1078" font-family="Consolas,Menlo,monospace" font-size="11.5" font-weight="700" fill="#1A1A1A">Gm#</text>
+<text x="180" y="1078" font-family="Consolas,Menlo,monospace" font-size="10" fill="#8A8A8A">integer</text>
+<text x="248" y="1078" font-family="Consolas,Menlo,monospace" font-size="10" fill="#5A5A5A">1 .. 162</text>
+<text x="382" y="1078" font-size="10" fill="#2E5C9A">Schedule_Results</text>
+<text x="530" y="1078" font-size="10.5" fill="#5A5A5A">Team game number. 163 occurs - makeup and tie-break games.</text>
+<text x="62" y="1111" font-family="Consolas,Menlo,monospace" font-size="11.5" font-weight="700" fill="#1A1A1A">Game_Num</text>
+<text x="180" y="1111" font-family="Consolas,Menlo,monospace" font-size="10" fill="#8A8A8A">integer</text>
+<text x="248" y="1111" font-family="Consolas,Menlo,monospace" font-size="10" fill="#5A5A5A">1 .. 162</text>
+<text x="382" y="1111" font-size="10" fill="#2E5C9A">the two lineup tables</text>
+<text x="530" y="1111" font-size="10.5" fill="#5A5A5A">Same concept as Gm#, different spelling.</text>
+<text x="62" y="1144" font-family="Consolas,Menlo,monospace" font-size="11.5" font-weight="700" fill="#1A1A1A">Boxscore_URL</text>
+<text x="180" y="1144" font-family="Consolas,Menlo,monospace" font-size="10" fill="#8A8A8A">text</text>
+<text x="248" y="1144" font-family="Consolas,Menlo,monospace" font-size="10" fill="#5A5A5A">BOS202008310</text>
+<text x="382" y="1144" font-size="10" fill="#2E5C9A">Schedule_Results</text>
+<text x="530" y="1144" font-size="10.5" fill="#5A5A5A">Identifies the GAME. 13,046 distinct, each on two rows.</text>
+<text x="62" y="1177" font-family="Consolas,Menlo,monospace" font-size="11.5" font-weight="700" fill="#1A1A1A">Row_Type</text>
+<text x="180" y="1177" font-family="Consolas,Menlo,monospace" font-size="10" fill="#8A8A8A">text</text>
+<text x="248" y="1177" font-family="Consolas,Menlo,monospace" font-size="10" fill="#5A5A5A">data | summary</text>
+<text x="382" y="1177" font-size="10" fill="#2E5C9A">102 of 108</text>
+<text x="530" y="1177" font-size="10.5" fill="#5A5A5A">Filter to data before joining or totalling.</text>
+<rect x="956" y="890" width="880" height="330" rx="8" fill="#F7F9FC" stroke="#2E5C9A" stroke-width="1.6"/>
+<text x="974" y="917" font-size="14.5" font-weight="700" fill="#1A1A1A">Exact join predicates</text>
+<rect x="976" y="939" width="11" height="11" rx="3" fill="#2E5C9A"/>
+<text x="996" y="948" font-size="11.5" font-weight="700" fill="#1A1A1A">any player table  to  any team table</text>
+<text x="996" y="964" font-family="Consolas,Menlo,monospace" font-size="10.5" fill="#5A5A5A">ON a.Season = b.Season AND a.Team = b.Team</text>
+<rect x="976" y="983" width="11" height="11" rx="3" fill="#1F7A6B"/>
+<text x="996" y="992" font-size="11.5" font-weight="700" fill="#1A1A1A">player table  to  player table   (Standard + Value + Advanced)</text>
+<text x="996" y="1008" font-family="Consolas,Menlo,monospace" font-size="10.5" fill="#5A5A5A">ON a.Season = b.Season AND a.Team = b.Team AND a.Player_ID = b.Player_ID</text>
+<rect x="976" y="1027" width="11" height="11" rx="3" fill="#6D4C9F"/>
+<text x="996" y="1036" font-size="11.5" font-weight="700" fill="#1A1A1A">fielding  to  player table   (aggregate fielding first)</text>
+<text x="996" y="1052" font-family="Consolas,Menlo,monospace" font-size="10.5" fill="#5A5A5A">ON a.Season = b.Season AND a.Team = b.Team AND a.Player_ID = b.Player_ID</text>
+<rect x="976" y="1071" width="11" height="11" rx="3" fill="#8C5A2B"/>
+<text x="996" y="1080" font-size="11.5" font-weight="700" fill="#1A1A1A">lineups  to  schedule   (the column names differ)</text>
+<text x="996" y="1096" font-family="Consolas,Menlo,monospace" font-size="10.5" fill="#5A5A5A">ON a.Season = b.Season AND a.Team = b.Team AND a.Game_Num = b."Gm#"</text>
+<rect x="976" y="1115" width="11" height="11" rx="3" fill="#8C5A2B"/>
+<text x="996" y="1124" font-size="11.5" font-weight="700" fill="#1A1A1A">both clubs in the same game</text>
+<text x="996" y="1140" font-family="Consolas,Menlo,monospace" font-size="10.5" fill="#5A5A5A">ON a.Boxscore_URL = b.Boxscore_URL AND a.Team &lt;&gt; b.Team</text>
+<rect x="976" y="1159" width="11" height="11" rx="3" fill="#1F7A6B"/>
+<text x="996" y="1168" font-size="11.5" font-weight="700" fill="#1A1A1A">lineups  to  player season</text>
+<text x="996" y="1184" font-family="Consolas,Menlo,monospace" font-size="10.5" fill="#5A5A5A">ON a.Season = b.Season AND a.Team = b.Team AND a.Player_ID = b.Player_ID</text>
+<rect x="44" y="1246" width="888" height="258" rx="8" fill="#FFF8E8" stroke="#C9A227" stroke-width="1.6"/>
+<text x="62" y="1273" font-size="14.5" font-weight="700" fill="#1A1A1A">Field-level traps</text>
+<text x="62" y="1300" font-family="Consolas,Menlo,monospace" font-size="11.5" font-weight="700" fill="#1A1A1A">Gm# vs Game_Num</text>
+<text x="178" y="1300" font-size="11.5" fill="#5A5A5A">the schedule calls it Gm#, the lineup tables Game_Num.</text>
+<text x="62" y="1318" font-size="11.5" fill="#5A5A5A">Same meaning. Quote "Gm#" in SQL - the # needs escaping.</text>
+<text x="62" y="1336" font-family="Consolas,Menlo,monospace" font-size="11.5" font-weight="700" fill="#1A1A1A">Position sets differ</text>
+<text x="214" y="1336" font-size="11.5" fill="#5A5A5A">Standard_Fielding_By_Position uses OF and has no DH.</text>
+<text x="62" y="1354" font-size="11.5" fill="#5A5A5A">Defensive_Lineups uses DH and has no OF. An inner join on</text>
+<text x="62" y="1372" font-size="11.5" fill="#5A5A5A">Position between the two silently drops both.</text>
+<text x="62" y="1390" font-family="Consolas,Menlo,monospace" font-size="11.5" font-weight="700" fill="#1A1A1A">Player vs Name</text>
+<text x="170" y="1390" font-size="11.5" fill="#5A5A5A">team-page tables use Player, league-page tables Name.</text>
+<text x="62" y="1408" font-size="11.5" fill="#5A5A5A">In the lineup tables Player is a SURNAME only ("Ortiz").</text>
+<text x="62" y="1426" font-size="11.5" fill="#5A5A5A">Join on Player_ID, never on any name column.</text>
+<text x="62" y="1444" font-family="Consolas,Menlo,monospace" font-size="11.5" font-weight="700" fill="#1A1A1A">Pos vs Position</text>
+<text x="178" y="1444" font-size="11.5" fill="#5A5A5A">Pos on batting tables is a code string like */3.</text>
+<text x="62" y="1462" font-size="11.5" fill="#5A5A5A">It is not a position key. Only Position is joinable.</text>
+<text x="62" y="1480" font-family="Consolas,Menlo,monospace" font-size="11.5" font-weight="700" fill="#1A1A1A">Team vs Tm</text>
+<text x="142" y="1480" font-size="11.5" fill="#5A5A5A">some tables carry both. Team is the clean code; join on it.</text>
+<rect x="956" y="1246" width="880" height="258" rx="8" fill="#FDF3F3" stroke="#B4545A" stroke-width="1.6"/>
+<text x="974" y="1273" font-size="14.5" font-weight="700" fill="#1A1A1A">Four things that will silently corrupt a result</text>
+<circle cx="983" cy="1296" r="9" fill="#B4545A"/>
+<text x="983" y="1300" font-size="11" font-weight="700" fill="#FFF" text-anchor="middle">1</text>
+<text x="1002" y="1300" font-family="Consolas,Menlo,monospace" font-size="11.5" font-weight="700" fill="#1A1A1A">Row_Type</text>
+<text x="1067" y="1300" font-size="11.5" fill="#5A5A5A">102 of 108 tables end with footer rows - Team Totals,</text>
+<text x="1002" y="1318" font-size="11.5" fill="#5A5A5A">Non-Pitcher Totals, Rank in 2 AL. Filter Row_Type = data first,</text>
+<text x="1002" y="1336" font-size="11.5" fill="#5A5A5A">or the club counts twice: as its players and as the total.</text>
+<circle cx="983" cy="1350" r="9" fill="#B4545A"/>
+<text x="983" y="1354" font-size="11" font-weight="700" fill="#FFF" text-anchor="middle">2</text>
+<text x="1002" y="1354" font-family="Consolas,Menlo,monospace" font-size="11.5" font-weight="700" fill="#1A1A1A">team-scoped vs league-wide</text>
+<text x="1197" y="1354" font-size="11.5" fill="#5A5A5A">Standard and Value split a traded</text>
+<text x="1002" y="1372" font-size="11.5" fill="#5A5A5A">player one row per club; Advanced gives ONE row, Team = 2TM.</text>
+<text x="1002" y="1390" font-size="11.5" fill="#5A5A5A">Union them and he counts twice; inner-join and the 2TM row drops.</text>
+<circle cx="983" cy="1404" r="9" fill="#B4545A"/>
+<text x="983" y="1408" font-size="11" font-weight="700" fill="#FFF" text-anchor="middle">3</text>
+<text x="1002" y="1408" font-family="Consolas,Menlo,monospace" font-size="11.5" font-weight="700" fill="#1A1A1A">grain</text>
+<text x="1046" y="1408" font-size="11.5" fill="#5A5A5A">Fielding is one row per player PER POSITION. Joined to</text>
+<text x="1002" y="1426" font-size="11.5" fill="#5A5A5A">batting unaggregated it multiplies the batting line by his</text>
+<text x="1002" y="1444" font-size="11.5" fill="#5A5A5A">position count. Aggregate, or filter to one Position, first.</text>
+<circle cx="983" cy="1458" r="9" fill="#B4545A"/>
+<text x="983" y="1462" font-size="11" font-weight="700" fill="#FFF" text-anchor="middle">4</text>
+<text x="1002" y="1462" font-family="Consolas,Menlo,monospace" font-size="11.5" font-weight="700" fill="#1A1A1A">franchise codes</text>
+<text x="1118" y="1462" font-size="11.5" fill="#5A5A5A">OAK to ATH 2025. Group on the code pair, not Team alone.</text>
+<text x="1002" y="1480" font-size="11.5" fill="#5A5A5A"></text>
+<text x="44" y="1538" font-size="13" font-weight="700" fill="#1A1A1A">Join keys</text>
+<line x1="44" y1="1560" x2="78" y2="1560" stroke="#2E5C9A" stroke-width="2.6"/>
+<text x="86" y="1564" font-family="Consolas,Menlo,monospace" font-size="11.5" fill="#1A1A1A">Season, Team</text>
+<text x="86" y="1579" font-size="10.5" fill="#5A5A5A">107 of 108 tables</text>
+<line x1="374" y1="1560" x2="408" y2="1560" stroke="#1F7A6B" stroke-width="2.6"/>
+<text x="416" y="1564" font-family="Consolas,Menlo,monospace" font-size="11.5" fill="#1A1A1A">Season, Team, Player_ID</text>
+<text x="416" y="1579" font-size="10.5" fill="#5A5A5A">67 tables</text>
+<line x1="704" y1="1560" x2="738" y2="1560" stroke="#6D4C9F" stroke-width="2.6"/>
+<text x="746" y="1564" font-family="Consolas,Menlo,monospace" font-size="11.5" fill="#1A1A1A">Season, Team, Player_ID, Position</text>
+<text x="746" y="1579" font-size="10.5" fill="#5A5A5A">24 tables</text>
+<line x1="1034" y1="1560" x2="1068" y2="1560" stroke="#8C5A2B" stroke-width="2.6"/>
+<text x="1076" y="1564" font-family="Consolas,Menlo,monospace" font-size="11.5" fill="#1A1A1A">Season, Team, Game_Num = Gm#</text>
+<text x="1076" y="1579" font-size="10.5" fill="#5A5A5A">4 tables</text>
+<text x="1394" y="1564" font-size="11.5" fill="#5A5A5A"><tspan font-weight="700">N:1</tspan> many-to-one. Arrows point many to one.</text>
+<text x="1394" y="1579" font-size="11.5" fill="#5A5A5A">Lines run only in the clear lanes between and below the tables.</text>
+<rect x="44" y="1610" width="16" height="12" rx="3" fill="#EEF3FA" stroke="#2E5C9A"/>
+<text x="68" y="1621" font-size="11.5" font-weight="700" fill="#1A1A1A">TEAM x SEASON</text>
+<text x="68" y="1635" font-size="10.5" fill="#5A5A5A">39 tables</text>
+<rect x="374" y="1610" width="16" height="12" rx="3" fill="#EAF5F2" stroke="#1F7A6B"/>
+<text x="398" y="1621" font-size="11.5" font-weight="700" fill="#1A1A1A">PLAYER x TEAM x SEASON</text>
+<text x="398" y="1635" font-size="10.5" fill="#5A5A5A">54 tables</text>
+<rect x="704" y="1610" width="16" height="12" rx="3" fill="#F2EEF8" stroke="#6D4C9F"/>
+<text x="728" y="1621" font-size="11.5" font-weight="700" fill="#1A1A1A">+ POSITION</text>
+<text x="728" y="1635" font-size="10.5" fill="#5A5A5A">24 tables</text>
+<rect x="1034" y="1610" width="16" height="12" rx="3" fill="#FBF4EC" stroke="#8C5A2B"/>
+<text x="1058" y="1621" font-size="11.5" font-weight="700" fill="#1A1A1A">GAME LEVEL</text>
+<text x="1058" y="1635" font-size="10.5" fill="#5A5A5A">4 tables, 519,392 rows</text>
+<text x="44" y="1676" font-size="11" fill="#5A5A5A">Generated from the data. Every column of every table: 1_Source_Data_CSV/FIELD_REFERENCE.md and 2_Excel_Workbooks/FIELD_REFERENCE.md</text>
+</svg>
