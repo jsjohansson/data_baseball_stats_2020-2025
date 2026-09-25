@@ -10,7 +10,7 @@ per statistical category.
 
 This is the complete reference for the dataset: the three separate READMEs merged into one,
 with nothing removed. If you prefer them apart, they are still in place at
-`README.md`, `1_Source_Data_CSV/README.md` and `2_Excel_Workbooks/README.md`.
+`README_primary.md`, `1_Source_Data_CSV/README.md` and `2_Data_Workbooks/README.md`.
 
 | Part | Covers |
 | --- | --- |
@@ -20,7 +20,7 @@ with nothing removed. If you prefer them apart, they are still in place at
 
 Two further references sit alongside this document: the complete per-column field references
 in [`1_Source_Data_CSV/FIELD_REFERENCE.md`](1_Source_Data_CSV/FIELD_REFERENCE.md) and
-[`2_Excel_Workbooks/FIELD_REFERENCE.md`](2_Excel_Workbooks/FIELD_REFERENCE.md), and the join
+[`2_Data_Workbooks/FIELD_REFERENCE.md`](2_Data_Workbooks/FIELD_REFERENCE.md), and the join
 maps [`JOIN_DIAGRAM.svg`](JOIN_DIAGRAM.svg) and
 [`JOIN_DIAGRAM_Detailed.svg`](JOIN_DIAGRAM_Detailed.svg).
 
@@ -40,7 +40,7 @@ per statistical category.
 | Folder | What it holds | Start here if... |
 | --- | --- | --- |
 | [`1_Source_Data_CSV/`](1_Source_Data_CSV/) | The dataset itself: 108 CSVs across four categories, plus the field reference and a Frictionless data package | ...you are loading into Tableau, Python, R or a database, or publishing the data |
-| [`2_Excel_Workbooks/`](2_Excel_Workbooks/) | The same data compiled into 5 Excel workbooks | ...you work in Excel |
+| [`2_Data_Workbooks/`](2_Data_Workbooks/) | The same data compiled into 7 Excel workbooks | ...you work in Excel |
 
 [`JOIN_DIAGRAM.svg`](JOIN_DIAGRAM.svg) shows how the tables join together - the keys, the five grains, a worked example and the traps. [`JOIN_DIAGRAM_Detailed.svg`](JOIN_DIAGRAM_Detailed.svg) is the table-by-table version, with key fields, cardinality and exact join predicates.
 
@@ -52,7 +52,7 @@ between them in substance: **folder 2 is built from folder 1**, which is the can
 **To publish or share the data** - `1_Source_Data_CSV/`. Open format, readable by anything,
 diffable, and `datapackage.json` describes every file with schemas and SHA-256 checksums.
 
-**To read or edit by hand** - `2_Excel_Workbooks/`.
+**To read or edit by hand** - `2_Data_Workbooks/`.
 
 Every table carries `Season`, `Team`, `League` and `Division`, and `Player_ID` is a stable key
 across all of them, so building a model on top of this is straightforward if you need one.
@@ -82,7 +82,7 @@ The complete dataset as scraped from [Baseball-Reference](https://www.baseball-r
 the 2020-2025 seasons. One tidy table per statistical category, every row carrying its own
 season, team, league and division.
 
-`1_Source_Data_CSV/` is the canonical form of the data. The Excel workbooks in `../2_Excel_Workbooks/`
+`1_Source_Data_CSV/` is the canonical form of the data. The Excel workbooks in `../2_Data_Workbooks/`
 are built from these files.
 
 Encoding is UTF-8 with BOM, so Excel opens them correctly and accented names render properly.
@@ -1082,30 +1082,52 @@ traced back to its source. Accented names are stored as proper UTF-8.
 
 ## Part 3 - Excel workbooks
 
-Everything below describes the workbooks in `2_Excel_Workbooks/`, which are built from the CSVs above. The data caveats in [Notes and caveats](#notes-and-caveats) apply equally here.
+Everything below describes the workbooks in `2_Data_Workbooks/`, which are built from the CSVs above. The data caveats in [Notes and caveats](#notes-and-caveats) apply equally here.
 
-The complete MLB dataset for 2020-2025 compiled into Excel: **108 datasets, 769,168 rows, 3,756 columns**, covering all 30 clubs across 19 seasons.
+The complete MLB dataset for 2020-2025 compiled into Excel: **108 datasets, 769,168 rows, 3,756 columns**, covering all 30 clubs across 6 seasons.
 
 Nothing in the workbooks is unique to Excel. Every workbook is built from the CSVs in [`../1_Source_Data_CSV/`](1_Source_Data_CSV/) and verified sheet by sheet against them - every sheet matched row-for-row and column-for-column at build time.
 
 | Reference | What it is |
 | --- | --- |
-| [`FIELD_REFERENCE.md`](2_Excel_Workbooks/FIELD_REFERENCE.md) | Every sheet, every column, with stat codes and definitions |
+| [`FIELD_REFERENCE.md`](2_Data_Workbooks/FIELD_REFERENCE.md) | Every sheet, every column, with stat codes and definitions |
 | [`../JOIN_DIAGRAM.svg`](JOIN_DIAGRAM.svg) | How the sheets join to each other |
 | [`../JOIN_DIAGRAM_Detailed.svg`](JOIN_DIAGRAM_Detailed.svg) | Table-by-table detail: key fields, cardinality, exact join predicates |
 | `Data_Dictionary` sheet | The same definitions, inside each workbook |
 
-### The five workbooks
+### The workbooks
+
+6 themed workbooks, plus a Complete Dataset that repeats all of them.
 
 | Workbook | Sheets | Rows | Size | Covers |
 | --- | ---: | ---: | ---: | --- |
-| `MLB_Team_Data_2020-2025.xlsx` | 12 | 73,806 | 12 MB | Core regular-season data: batting, pitching, fielding, value/WAR, rosters, coaching staffs, schedules, standings |
-| `MLB_Playoff_Data_2020-2025.xlsx` | 8 | 9,736 | 1 MB | Postseason batting, pitching, fielding, rosters, schedules and series results |
-| `MLB_Advanced_Stats_2020-2025.xlsx` | 86 | 192,326 | 32 MB | Advanced, situational and league/team aggregates, award voting, transactions |
-| `MLB_Game_Level_2020-2025.xlsx` | 2 | 493,300 | 32 MB | Batting orders and defensive lineups, one row per player per game |
-| `MLB_Complete_Dataset_2020-2025.xlsx` | 108 | 769,168 | 78 MB | **All four above in one file** |
+| `MLB_Team_Data_2020-2025.xlsx` | 12 | 73,806 | 12 MB | Core regular-season data: batting, pitching, fielding, value/WAR, rosters, coaching staffs, schedules and standings. |
+| `MLB_Playoff_Data_2020-2025.xlsx` | 8 | 9,736 | 1 MB | Postseason batting, pitching, fielding, rosters, schedules and series results. |
+| `MLB_Advanced_Stats_2020-2025_Part1.xlsx` | 43 | 116,110 | 21 MB | Advanced, situational and league/team aggregate datasets, award voting and transactions. Part 1 of 2 for Advanced Stats: 43 of the 86 sheets, `Advanced_Batting` to `Sabermetric_Batting`. |
+| `MLB_Advanced_Stats_2020-2025_Part2.xlsx` | 43 | 76,216 | 11 MB | Advanced, situational and league/team aggregate datasets, award voting and transactions. Part 2 of 2 for Advanced Stats: 43 of the 86 sheets, `Situational_Batting` to `Win_Probability_Pitching`. |
+| `MLB_Batting_Order_2020-2025.xlsx` | 1 | 234,828 | 16 MB | One row per player per game. Just `Batting_Orders` - one of 2 workbooks covering Game Level. |
+| `MLB_Defense_Line_Up_2020-2025.xlsx` | 1 | 258,472 | 16 MB | One row per player per game. Just `Defensive_Lineups` - one of 2 workbooks covering Game Level. |
+| `MLB Complete Dataset/MLB_Complete_Dataset_2020-2025.xlsx` | 108 | 769,168 | 78 MB | **Every dataset** - all 6 themed workbooks in one file. |
 
-The four themed workbooks do not overlap - together they hold all 108 datasets exactly once. Complete Dataset duplicates all four, so take the themed set **or** Complete, never both.
+The themed workbooks do not overlap - together they hold all 108 datasets exactly once. The Complete Dataset duplicates all of them, so take the themed set **or** Complete, never both.
+
+#### Why some categories are split across two workbooks
+
+Advanced Stats and Game Level are each split in two. No sheet is anywhere near the 1,048,576-row limit - the split is purely to keep each file small enough to open quickly, share by email and hold in memory. Nothing is lost or duplicated: the halves carry different sheets, and every sheet is complete.
+
+**Advanced Stats** -> `MLB_Advanced_Stats_2020-2025_Part1.xlsx` + `MLB_Advanced_Stats_2020-2025_Part2.xlsx`
+
+| Workbook | Sheets | Rows | Size |
+| --- | ---: | ---: | ---: |
+| `MLB_Advanced_Stats_2020-2025_Part1.xlsx` | 43 | 116,110 | 21 MB |
+| `MLB_Advanced_Stats_2020-2025_Part2.xlsx` | 43 | 76,216 | 11 MB |
+
+**Game Level** -> `MLB_Batting_Order_2020-2025.xlsx` + `MLB_Defense_Line_Up_2020-2025.xlsx`
+
+| Workbook | Sheets | Rows | Size |
+| --- | ---: | ---: | ---: |
+| `MLB_Batting_Order_2020-2025.xlsx` | 1 | 234,828 | 16 MB |
+| `MLB_Defense_Line_Up_2020-2025.xlsx` | 1 | 258,472 | 16 MB |
 
 ### What is in each workbook
 
@@ -1143,9 +1165,9 @@ The four themed workbooks do not overlap - together they hold all 108 datasets e
 | `Postseason_Schedule_Results` | 522 | 27 |
 | `Postseason_Series_Results` | 68 | 13 |
 
-#### `MLB_Advanced_Stats_2020-2025.xlsx`
+#### `MLB_Advanced_Stats_2020-2025_Part1.xlsx`
 
-86 data sheets, 192,326 rows, 32 MB. Plus a `Contents` sheet and a `Data_Dictionary` sheet.
+43 data sheets, 116,110 rows, 21 MB. Plus a `Contents` sheet and a `Data_Dictionary` sheet.
 
 | Sheet | Rows | Columns |
 | --- | ---: | ---: |
@@ -1192,6 +1214,13 @@ The four themed workbooks do not overlap - together they hold all 108 datasets e
 | `Rookies_Batting` | 1,337 | 36 |
 | `Rookies_Pitching` | 885 | 42 |
 | `Sabermetric_Batting` | 6,174 | 37 |
+
+#### `MLB_Advanced_Stats_2020-2025_Part2.xlsx`
+
+43 data sheets, 76,216 rows, 11 MB. Plus a `Contents` sheet and a `Data_Dictionary` sheet.
+
+| Sheet | Rows | Columns |
+| --- | ---: | ---: |
 | `Situational_Batting` | 5,190 | 52 |
 | `Standard_Fielding_By_Position` | 18,324 | 53 |
 | `Starter_Pitching` | 2,508 | 47 |
@@ -1236,30 +1265,43 @@ The four themed workbooks do not overlap - together they hold all 108 datasets e
 | `Win_Probability_Batting` | 5,185 | 35 |
 | `Win_Probability_Pitching` | 6,405 | 36 |
 
-#### `MLB_Game_Level_2020-2025.xlsx`
+#### `MLB_Batting_Order_2020-2025.xlsx`
 
-2 data sheets, 493,300 rows, 32 MB. Plus a `Contents` sheet and a `Data_Dictionary` sheet.
+1 data sheets, 234,828 rows, 16 MB. Plus a `Contents` sheet and a `Data_Dictionary` sheet.
 
 | Sheet | Rows | Columns |
 | --- | ---: | ---: |
 | `Batting_Orders` | 234,828 | 18 |
+
+#### `MLB_Defense_Line_Up_2020-2025.xlsx`
+
+1 data sheets, 258,472 rows, 16 MB. Plus a `Contents` sheet and a `Data_Dictionary` sheet.
+
+| Sheet | Rows | Columns |
+| --- | ---: | ---: |
 | `Defensive_Lineups` | 258,472 | 17 |
 
-#### `MLB_Complete_Dataset_2020-2025.xlsx`
+#### `MLB Complete Dataset/MLB_Complete_Dataset_2020-2025.xlsx`
 
-All 108 sheets listed above, in one file, plus `Contents` and `Data_Dictionary`. At 78 MB it is slow to open and will use several GB of memory; prefer a themed workbook, or the CSVs, unless you specifically need everything in one place.
+108 data sheets, 769,168 rows, 78 MB. Plus a `Contents` sheet and a `Data_Dictionary` sheet.
+
+All 108 sheets listed above, in one file. At 78 MB it is slow to open and heavy on memory; prefer a themed workbook, or the CSVs, unless you need everything in one place. It sits in its own subfolder so it is not picked up by accident, and it is left exactly as first built - the splits above do not change it.
 
 ### How every workbook is built
 
-- **`Contents`** is the first sheet: every sheet in that workbook with its row and column count, so you can see the shape of the file before opening anything.
-- **`Data_Dictionary`** is the last sheet: every column in that workbook with its Baseball-Reference stat code and definition, filtered to just that workbook's datasets.
+- **`Contents`** is the first sheet: every sheet in that workbook with its row and column
+  count, so you can see the shape of the file before opening anything.
+- **`Data_Dictionary`** is the last sheet: every column in that workbook with its
+  Baseball-Reference stat code and definition, filtered to just that workbook's datasets.
 - **Row 1 is frozen** on every sheet, so headers stay visible when scrolling.
 - **AutoFilter is on** for every sheet, so each column has a filter dropdown immediately.
-- **Column widths are fitted** to the content, capped so wide text columns do not push the sheet off screen.
+- **Column widths are fitted** to the content, capped so wide text columns do not push the
+  sheet off screen.
 
 ### Sheet naming
 
-Sheet names match the CSV filenames exactly, with one exception: Excel caps a sheet name at 31 characters.
+Sheet names match the CSV filenames exactly, with one exception: Excel caps a sheet name at 31
+characters.
 
 | Dataset | Sheet name | Why |
 | --- | --- | --- |
@@ -1271,28 +1313,43 @@ The data in that sheet is complete and identical to the CSV - only the label is 
 
 #### Filter `Row_Type` before you total anything
 
-102 of the 108 sheets carry a `Row_Type` column. Baseball-Reference ends its player tables with footer rows - *Team Totals*, *Non-Pitcher Totals*, *Rank in 2 AL* - and those rows are preserved here because they are useful, but they sit in the same sheet as the players. Any sum, average or pivot that does not exclude them counts the team twice: once as the players, once as the total.
+102 of the 108 sheets carry a `Row_Type` column. Baseball-Reference ends its player tables with
+footer rows - *Team Totals*, *Non-Pitcher Totals*, *Rank in 2 AL* - and those rows are
+preserved here because they are useful, but they sit in the same sheet as the players. Any sum,
+average or pivot that does not exclude them counts the team twice: once as the players, once as
+the total.
 
-Set the `Row_Type` filter to `data` first, or add `Row_Type = "data"` as a report filter in a pivot table.
+Set the `Row_Type` filter to `data` first, or add `Row_Type = "data"` as a report filter in a
+pivot table.
 
 #### Pivot tables
 
-Each sheet is a clean rectangular range with a header row, so `Ctrl+T` will turn any sheet into a table and pivot cleanly. `Season`, `Team`, `League` and `Division` are on nearly every sheet and make natural row or filter fields.
+Each sheet is a clean rectangular range with a header row, so `Ctrl+T` will turn any sheet into
+a table and pivot cleanly. `Season`, `Team`, `League` and `Division` are on nearly every sheet
+and make natural row or filter fields.
 
 #### Joining sheets
 
-There are no lookup tables - every sheet carries its own identifiers. To combine sheets, match on:
+There are no lookup tables - every sheet carries its own identifiers. To combine sheets, match
+on:
 
 - `Season` + `Team` for anything team-level
 - `Season` + `Team` + `Player_ID` for player-level
 - add `Position` for the per-position fielding sheets
 - `Season` + `Team` + `Gm#`/`Game_Num` for game-level
 
-For more than a couple of sheets, Power Query (Data > Get Data) handles this far better than `XLOOKUP` across 800,000-row sheets. [`../JOIN_DIAGRAM_Detailed.svg`](JOIN_DIAGRAM_Detailed.svg) sets out the full picture, including the grain of each group and the traps.
+Sheets in different workbooks join exactly as sheets in the same workbook do - the keys are on
+every sheet, so splitting a category across two files changes nothing about how they combine.
+For more than a couple of sheets, Power Query (Data > Get Data) handles this far better than
+`XLOOKUP` across large sheets, and it can pull from several workbooks at once.
+[`../JOIN_DIAGRAM_Detailed.svg`](JOIN_DIAGRAM_Detailed.svg) sets out the full picture,
+including the grain of each group and the traps.
 
 #### Watch the grain when combining
 
-Joining a player-season sheet to a team-season sheet is many-to-one and safe. Joining two sheets at different grains without aggregating first multiplies rows - the usual way a total comes out several times too large.
+Joining a player-season sheet to a team-season sheet is many-to-one and safe. Joining two
+sheets at different grains without aggregating first multiplies rows - the usual way a total
+comes out several times too large.
 
 ### Size and limits
 
@@ -1302,9 +1359,11 @@ Joining a player-season sheet to a team-season sheet is many-to-one and safe. Jo
 | `Batting_Orders` | 234,828 | 22% |
 | `Schedule_Results` | 26,092 | 2% |
 
-No sheet exceeds the limit, so nothing is split - each workbook is a single file covering all 19 seasons. `Defensive_Lineups` is the one to watch: it grows by around 48,000 rows a season, so it would cross the limit in roughly four more seasons.
+No sheet approaches the row limit - the largest uses 25% of it - so no workbook is split for that reason.
 
-The trade-off for keeping them whole is size. Advanced Stats and Game Level are around 100 MB each and Complete Dataset is 252 MB - slow to open, heavy on memory, and too large to attach to most email. **If you are loading this into Tableau, Power BI, Python, R or a database, use the CSVs instead**: they are faster, smaller and do not have the row ceiling.
+On size, the themed workbooks now run from 1 MB to 21 MB. All of them are under 25 MB, so each one attaches to email. The Complete Dataset is the exception at 78 MB.
+
+If you are loading this into Tableau, Power BI, Python, R or a database, **use the CSVs instead** - they are faster, smaller and have no row ceiling.
 
 ---
 
